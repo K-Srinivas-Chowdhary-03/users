@@ -28,7 +28,7 @@ app.get("/", (req, res) => {
 });
 
 // Add a user
-app.post("/users", async (req, res) => {
+app.post("/user", async (req, res) => {
   try {
     const newUser = new User(req.body);
     const savedUser = await newUser.save();
